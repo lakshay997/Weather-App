@@ -1,0 +1,201 @@
+<div class="col-md-12 ">
+  <div class="container" class="input-group mt-5">
+    <h1>Weather App</h1>
+      <div class="grid" (click)="show()" >
+        <h5>Click Me</h5>
+        <div *ngIf="shows">
+          <h1>1</h1>
+              <input class="form-control" type="text" #userInput placeholder="Enter City name" required>
+              <div class="input-group-append">
+                  <button class="input-group-text btn btn-outline-primary" (click)="getCity1(userInput.value)">Search</button>
+              </div>
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-outline-primary" (click)="userInput.value=''" (click)="result1=false">Edit</button>
+              </div>
+          <div *ngIf='result1'>
+            <p> Temperature is: {{weather.main.temp | number: '1.0-0' }} &#176;C,
+                Weather is: {{weather.weather[0].main}}</p>
+                <img class="img" src="assets/images/{{weather.weather[0].main}}.jpg" alt="image">
+
+          </div>
+      </div>
+        <hr>
+      </div>
+  </div>
+
+  <div class="container" class="input-group mt-5">
+      <div class="grid" (click)="show()">
+        <h5>Click Me</h5>
+        <div *ngIf="shows">
+          <h1>2</h1>
+              <input class="form-control" type="text" #userInput placeholder="Enter City name">
+              <div class="input-group-append">
+                  <button class="input-group-text btn btn-outline-primary" (click)="getCity2(userInput.value)">Search</button>
+              </div>
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-outline-primary" (click)="userInput.value=''" (click)="result2=false">Edit</button>
+              </div>
+          <div *ngIf='result2'>
+            <p> Temperature is: {{weather.main.temp | number: '1.0-0' }} &#176;C,
+              Weather is: {{weather.weather[0].main}}</p>
+              <img class="img" src="assets/images/{{weather.weather[0].main}}.jpg" alt="image">
+          </div>
+      </div>
+        <hr>
+      </div>
+  </div>
+
+  <div class="container" class="input-group mt-5">
+      <div class="grid" (click)="show()">
+        <h5>Click Me</h5>
+        <div *ngIf="shows">
+          <h1>3</h1>
+              <input class="form-control" type="text" #userInput placeholder="Enter City name">
+              <div class="input-group-append">
+                  <button class="input-group-text btn btn-outline-primary" (click)="getCity3(userInput.value)">Search</button>
+              </div>
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-outline-primary" (click)="userInput.value=''" (click)="result3=false">Edit</button>
+              </div>
+              <div *ngIf='result3'> 
+                <p> Temperature is: {{weather.main.temp | number: '1.0-0' }} &#176;C,
+                  Weather is: {{weather.weather[0].main}}</p>
+                  <img class="img" src="assets/images/{{weather.weather[0].main}}.jpg" alt="image">
+              </div>
+      </div>
+        <hr>
+      </div>
+  </div>
+
+  <div class="container" class="input-group mt-5">
+      <div class="grid" (click)="show()">
+        <h5>Click Me</h5>
+        <div *ngIf="shows">
+          <h1>4</h1>
+              <input class="form-control" type="text" #userInput placeholder="Enter City name">
+              <div class="input-group-append">
+                  <button class="input-group-text btn btn-outline-primary" (click)="getCity4(userInput.value)">Search</button>
+              </div>
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-outline-primary" (click)="userInput.value=''" (click)="result4=false">Edit</button>
+              </div>
+              <div *ngIf='result4'>
+                <p> Temperature is: {{weather.main.temp | number: '1.0-0' }} &#176;C,
+                  Weather is: {{weather.weather[0].main}}</p>
+                  <img class="img" src="assets/images/{{weather.weather[0].main}}.jpg" alt="image">
+              </div>
+      </div>
+        <hr>
+      </div>
+  </div>
+
+  <div class="container" class="input-group mt-5">
+      <div class="grid" (click)="show()">
+        <h5>Click Me</h5>
+        <div *ngIf="shows">
+          <h1>5</h1>
+              <input class="form-control" type="text" #userInput placeholder="Enter City name">
+              <div class="input-group-append">
+                  <button class="input-group-text btn btn-outline-primary" (click)="getCity5(userInput.value)">Search</button>
+              </div>
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-outline-primary" (click)="userInput.value=''" (click)="result5=false">Edit</button>
+              </div>
+              <div *ngIf='result5'>
+                <p> Temperature is: {{weather.main.temp | number: '1.0-0' }} &#176;C,
+                  Weather is: {{weather.weather[0].main}}</p>
+                  <img class="img" src="assets/images/{{weather.weather[0].main}}.jpg" alt="image">
+              </div>
+      </div>
+        <hr>
+      </div>
+  </div>
+
+  <div class="container" class="input-group mt-5">
+      <div class="grid" (click)="show()">
+        <h5>Click Me</h5>
+        <div *ngIf="shows">
+          <h1>6</h1>
+              <input class="form-control" type="text" #userInput placeholder="Enter City name">
+              <div class="input-group-append">
+                  <button class="input-group-text btn btn-outline-primary" (click)="getCity6(userInput.value)">Search</button>
+              </div>
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-outline-primary" (click)="userInput.value=''" (click)="result6=false">Edit</button>
+              </div>
+              <div *ngIf='result6'>
+                <p> Temperature is: {{weather.main.temp | number: '1.0-0' }} &#176;C,
+                  Weather is: {{weather.weather[0].main}}</p>
+                  <img class="img" src="assets/images/{{weather.weather[0].main}}.jpg" alt="image">
+              </div>
+      </div>
+        <hr>
+      </div>
+  </div>
+
+  <div class="container" class="input-group mt-5">
+      <div class="grid" (click)="show()">
+        <h5>Click Me</h5>
+        <div *ngIf="shows">
+          <h1>7</h1>
+              <input class="form-control" type="text" #userInput placeholder="Enter City name">
+              <div class="input-group-append">
+                  <button class="input-group-text btn btn-outline-primary" (click)="getCity7(userInput.value)">Search</button>
+              </div>
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-outline-primary" (click)="userInput.value=''" (click)="result7=false">Edit</button>
+              </div>
+              <div *ngIf='result7'>
+                <p> Temperature is: {{weather.main.temp | number: '1.0-0' }} &#176;C,
+                  Weather is: {{weather.weather[0].main}}</p>
+                  <img class="img" src="assets/images/{{weather.weather[0].main}}.jpg" alt="image">
+              </div>
+      </div>
+        <hr>
+      </div>
+  </div>
+
+  <div class="container" class="input-group mt-5">
+      <div class="grid" (click)="show()">
+        <h5>Click Me</h5>
+        <div *ngIf="shows">
+          <h1>8</h1>
+              <input class="form-control" type="text" #userInput placeholder="Enter City name">
+              <div class="input-group-append">
+                  <button class="input-group-text btn btn-outline-primary" (click)="getCity8(userInput.value)">Search</button>
+              </div>
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-outline-primary" (click)="userInput.value=''" (click)="result8=false">Edit</button>
+              </div>
+              <div *ngIf='result8'>
+                <p> Temperature is: {{weather.main.temp | number: '1.0-0' }} &#176;C,
+                  Weather is: {{weather.weather[0].main}}</p>
+                  <img class="img" src="assets/images/{{weather.weather[0].main}}.jpg" alt="image">
+              </div>
+      </div>
+        <hr>
+      </div>
+  </div>
+
+  <div class="container" class="input-group mt-5">
+      <div class="grid" (click)="show()">
+        <h5>Click Me</h5>
+        <div *ngIf="shows">
+          <h1>9</h1>
+              <input class="form-control" type="text" #userInput placeholder="Enter City name">
+              <div class="input-group-append">
+                  <button class="input-group-text btn btn-outline-primary" (click)="getCity9(userInput.value)">Search</button>
+              </div>
+              <div class="input-group-append">
+                <button class="input-group-text btn btn-outline-primary" (click)="userInput.value=''" (click)="result9=false">Edit</button>
+              </div>
+              <div *ngIf='result9'>
+                <p> Temperature is: {{weather.main.temp | number: '1.0-0' }} &#176;C,
+                  Weather is: {{weather.weather[0].main}}</p>
+                  <img class="img" src="assets/images/{{weather.weather[0].main}}.jpg" alt="image">
+              </div>
+      </div>
+        <hr>
+      </div>
+  </div>
+</div>
